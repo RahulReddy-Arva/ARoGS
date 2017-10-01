@@ -1,0 +1,82 @@
+
+Loop 1:--------------------------[B2] = [x3, x6, x7]
+[D0] = [x2, x5]
+[D1] = [x1, x3, x4, x6, x7]
+[C1] = [x4, x6, x7]
+[B1] = [x1, x2, x4, x5]
+[C2] = [x1, x2, x3, x5]
+
+Certain Rules:
+Possible Rules:
+[D1] -> A1[Support:-2, Confidence:-40%]
+[D1] -> A2[Support:-2, Confidence:-40%]
+[C1] -> A2[Support:-2, Confidence:-66%]
+[B1] -> A2[Support:-2, Confidence:-50%]
+[C2] -> A1[Support:-2, Confidence:-50%]
+
+Loop 2:--------------------------[D0, C1] = []
+[D0, B1] = [x2, x5]
+[D0, C2] = [x2, x5]
+[D1, C1] = [x4, x6, x7]
+[B2, D0] = []
+[D1, B1] = [x1, x4]
+[D1, C2] = [x1, x3]
+[B2, D1] = [x3, x6, x7]
+[C1, B1] = [x4]
+[B2, C1] = [x6, x7]
+[B1, C2] = [x1, x2, x5]
+[B2, C2] = [x3]
+
+Certain Rules:20 minConfidence 2 minSupport 
+20 minConfidence 2 minSupport 
+[D1, C2] -> A1[Support:-2, Confidence:-100%]
+20 minConfidence 2 minSupport 
+
+Possible Rules:
+[D1, C1] -> A2[Support:-2, Confidence:-66%]
+
+Loop 3:--------------------------[D0, D1, B1] = []
+[D0, B1, C2] = [x2, x5]
+[D1, C1, B1] = [x4]
+[D1, B1, C2] = [x1]
+[B2, D1, C1] = [x6, x7]
+[B2, D1, B1] = []
+[D0, D1, C1, B1] = [x1, x4]
+[D0, D1, C1, C2] = []
+[D0, D1, B1, C2] = [x1, x2, x5]
+[B2, D0, D1, B1] = []
+[B2, D0, D1, C2] = [x3, x6, x7]
+[D1, C1, B1, C2] = []
+[B2, D0, C1, B1] = [x6, x7]
+[B2, D0, C1, C2] = [x6, x7]
+[B2, D1, C1, B1] = [x6, x7]
+[B2, D1, B1, C2] = [x1, x2, x5]
+[B2, C1, B1, C2] = []
+
+Certain Rules:20 minConfidence 2 minSupport 
+[D1, C2] -> A1[Support:-2, Confidence:-100%]
+20 minConfidence 2 minSupport 
+20 minConfidence 2 minSupport 
+
+Possible Rules:
+
+Loop 4:--------------------------[D0, D1, C1, B1, C2] = []
+[B2, D0, D1, C1, B1] = [x6, x7]
+[B2, D0, D1, C1, C2] = [x6, x7]
+[B2, D0, D1, B1, C2] = []
+[B2, D0, C1, B1, C2] = []
+[B2, D1, C1, B1, C2] = []
+[D0, D1, B1, C2] = [x2, x5]
+[B2, D1, C1, B1] = [x6, x7]
+
+Certain Rules:20 minConfidence 2 minSupport 
+[D1, C2] -> A1[Support:-2, Confidence:-100%]
+
+Possible Rules:
+
+Loop 5:--------------------------[B2, D0, D1, C1, B1] = [x6, x7]
+
+Certain Rules:20 minConfidence 2 minSupport 
+[D1, C2] -> A1[Support:-2, Confidence:-100%]
+
+Possible Rules:
